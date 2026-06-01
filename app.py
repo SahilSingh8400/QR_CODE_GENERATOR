@@ -1,15 +1,19 @@
-from flask import Flask, render_template,request,send_file
+from flask import Flask, render_template, request
 import qrcode
 
-app=Flask(__name__)
+app = Flask(__name__)
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/", methods=["GET", "POST"])
 def home():
-    if request.method=="POST":
-        text=request.form["text"]
-        qrcode.make(text).save("text_to_qr.png")
-        return send_file("text_to_qr.png",mimetype="image/png")
-    return render_template("index.html")
+    qr_code = None
+
+    if request.method == "POST":
+        text = request.form["text"]
+
+        qr_code = "qr.png"
+        qrcode.make(text).save(f"static/{qr_code}")
+
+    return render_template("index.html", qr_code=qr_code)
 
 if __name__ == "__main__":
     app.run(debug=True)
