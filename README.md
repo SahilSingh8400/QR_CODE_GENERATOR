@@ -1,23 +1,16 @@
 # QR Code Generator
 
-A simple QR Code Generator built using Flask and Python.
+A simple QR Code Generator built with Flask and Python.
+
+🌐 Live Demo: https://qr-code-generator-oewx.onrender.com
 
 ## Features
 
 - Generate QR codes from text or URLs
-- Clean web interface
-- Instant QR code creation
 - Download generated QR codes
+- Simple and responsive UI
 
-## Tech Stack
-
-- Python
-- Flask
-- HTML
-- CSS
-- qrcode
-
-## Installation
+## Run Locally
 
 ```bash
 git clone https://github.com/SahilSingh8400/QR_CODE_GENERATOR.git
@@ -36,8 +29,9 @@ Open:
 http://127.0.0.1:5000
 ```
 
-## Author
+## Tech Stack
 
-Sahil Singh
-
-GitHub: https://github.com/SahilSingh8400
+- Python
+- Flask
+- qrcode
+- Bootstrap
