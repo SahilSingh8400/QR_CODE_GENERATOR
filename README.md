@@ -1,5 +1,8 @@
 # QR Code Generator
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/127f7296-695d-4628-88d8-6f4f907569b4" />
+
+
 A simple QR Code Generator built with Flask and Python.
 
 🌐 Live Demo: https://qr-code-generator-oewx.onrender.com
